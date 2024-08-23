@@ -1,0 +1,177 @@
+@import url(whatsapp.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #ECE5DD;
+}
+
+.inicio-menu {
+  max-width: 400px; 
+  margin: 50px auto; 
+  border: 1px solid #000;
+  border-radius: 23px;
+}
+
+/*primer menu*/
+
+.encabezado-menu__header {
+  background-color: #075E54;
+  display: flex;
+  align-items: center;
+  padding: 15px; 
+  border-radius: 23px 23px 0 0;
+  position: relative;
+}
+
+.logo-header {
+  max-width: 100px; 
+  margin-right: 20px; 
+}
+
+.buscar-container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 10px; 
+  border-radius: 20px;
+  margin-right: auto;
+  flex-grow: 1;
+}
+
+.buscar-input {
+  border: none;
+  outline: none;
+  margin-left: 10px; 
+  flex-grow: 1;
+}
+
+.lupa-icon {
+  color: #757575;
+}
+
+.ajustes-icon {
+  color: white;
+  cursor: pointer;
+}
+
+/*---------------------*/
+
+/*menu secundario*/
+
+.superior-menu {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  background-color: #075E54;
+}
+
+.superior-menu__camara {
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.superior-menu__opciones {
+  color: white;
+  padding: 15px; 
+  cursor: pointer;
+  flex-grow: 1;
+  text-align: center;
+  position: relative;
+}
+
+/*----------------------------*/
+
+/*barrita blanca*/
+
+.barra-seleccion {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 25%;
+  height: 4px;
+  background-color: white;
+  transition: transform 0.3s ease;
+}
+
+/*------------------------*/
+
+/*el traslado de chat a estado*/
+
+#chats-link:hover.barra-seleccion {
+  transform: translateX(25%);
+}
+
+#estados-link:hover.barra-seleccion,
+#estados:target.barra-seleccion {
+  transform: translateX(50%);
+}
+
+#llamadas-link:hover.barra-seleccion,
+#llamadas:target.barra-seleccion {
+  transform: translateX(75%);
+}
+
+/*---------------------------------*/
+
+.contenido {
+  padding: 10px; 
+  height: 500px; 
+  overflow-y: auto;
+}
+
+/*esto es el cambio de chat a estado*/
+
+.chat-lista {
+  display: none;
+}
+
+#chats:target,
+#estados:target,
+#llamadas:target {
+  display: block;
+}
+
+/*----------------------------------*/
+
+/*modificadores de los chats*/
+
+.chat-lista__chat-item {
+  display: flex;
+  align-items: center;
+  padding: 20px; 
+  border-bottom: 1px solid #e0e0e0;
+  cursor: pointer;
+}
+
+.foto-chat {
+  width: 60px; 
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px; 
+}
+
+.info-chat {
+  flex: 1;
+}
+
+.chat-lista__nombre {
+  font-weight: bold;
+  color: #000;
+}
+
+.chat-lista__mensaje {
+  color: #757575;
+}
+
+.chat-lista__hora{
+  color: #757575;
+}
+
+/*----------------------------------*/

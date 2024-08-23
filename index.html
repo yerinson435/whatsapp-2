@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="inicio-menu">
+    <div class="encabezado-menu__header">
+      <img src="whatsapp-removebg-preview.png" alt="WhatsApp Logo" class="logo-header">
+      <div class="buscar-container">
+        <i class='bx bx-search lupa-icon'></i>
+        <input type="text" placeholder="Buscar" class="buscar-input">
+      </div>
+      <i class='bx bx-dots-vertical-rounded ajustes-icon'></i>
+    </div>
+
+    <nav class="superior-menu">
+      <i class='bx bx-camera superior-menu__camara'></i>
+      <a href="#chats" class="superior-menu__opciones" id="chats-link">CHATS</a>
+      <a href="#estados" class="superior-menu__opciones" id="estados-link">ESTADOS</a>
+      <a href="#llamadas" class="superior-menu__opciones" id="llamadas-link">LLAMADAS</a>
+      <div class="barra-seleccion"></div>
+    </nav>
+
+    <div class="contenido">
+      <section id="chats" class="chat-lista">
+        <div class="chat-lista__chat-item">
+          <img src="vaca.jpg" alt="Foto-de-Vaca" class="foto-chat">
+          <div class="info-chat">
+            <div class="chat-lista__nombre">Vaca</div>
+            <div class="chat-lista__mensaje">págueme</div>
+          </div>
+          <div class="chat-lista__hora">09:11 AM</div>
+        </div>
+        <hr>
+        <div class="chat-lista__chat-item">
+          <img src="pug.jpg" alt="Foto-de-la-pug" class="foto-chat">
+          <div class="info-chat">
+            <div class="chat-lista__nombre">la pug</div>
+            <div class="chat-lista__mensaje">¿Cómo estás?</div>
+          </div>
+          <div class="chat-lista__hora">09:30 AM</div>
+        </div>
+        <hr>
+        <div class="chat-lista__chat-item">
+          <img src="germu.jpg" alt="Foto-de-la-germu" class="foto-chat">
+          <div class="info-chat">
+            <div class="chat-lista__nombre">La germu del ñero</div>
+            <div class="chat-lista__mensaje">Vamos a salir</div>
+          </div>
+          <div class="chat-lista__hora">10:15 AM</div>
+        </div>
+        <hr>
+        <div class="chat-lista__chat-item">
+          <img src="ñero.jpg" alt="Foto-de-el-ñero" class="foto-chat">
+          <div class="info-chat">
+            <div class="chat-lista__nombre">el ñero</div>
+            <div class="chat-lista__mensaje">Estoy en camino</div>
+          </div>
+          <div class="chat-lista__hora">11:00 AM</div>
+        </div>
+        <hr>
+        <div class="chat-lista__chat-item">
+          <img src="giovanni.jpg" alt="Foto-de-giovanni" class="foto-chat">
+          <div class="info-chat">
+            <div class="chat-lista__nombre">giovanni</div>
+            <div class="chat-lista__mensaje">Reunión a las 2</div>
+          </div>
+          <div class="chat-lista__hora">12:30 PM</div>
+        </div>
+        <hr>
+        <div class="chat-lista__chat-item">
+          <img src="yeyo.jpg" alt="Foto-de-yeyo" class="foto-chat">
+          <div class="info-chat">
+            <div class="chat-lista__nombre">yeyo</div>
+            <div class="chat-lista__mensaje">vea mi estado</div>
+          </div>
+          <div class="chat-lista__hora">12:30 PM</div>
+        </div>
+        <hr>
+      </section>
+
+      <section id="estados" class="chat-lista">
+        <div class="chat-lista__chat-item">
+          <img src="yeyo.jpg" alt="Foto-de-yeyo" class="foto-chat">
+          <div class="info-chat">
+            <div class="chat-lista__nombre">Jefferson</div>
+            <div class="chat-lista__mensaje">Hace 30 minutos</div>
+          </div>
+        </div>
+        <hr>
+        <div class="chat-lista__chat-item">
+          <img src="dylan.jpg" alt="Foto-de-dylan" class="foto-chat">
+          <div class="info-chat">
+            <div class="chat-lista__nombre">dylan</div>
+            <div class="chat-lista__mensaje">Hace 1 hora</div>
+          </div>
+        </div>
+        <hr>
+        <div class="chat-lista__chat-item">
+          <img src="fumadora.jpg" alt="Foto-de-fumadora" class="foto-chat">
+          <div class="info-chat">
+            <div class="chat-lista__nombre">fumadora</div>
+            <div class="chat-lista__mensaje">Hace 2 horas</div>
+          </div>
+        </div>
+        <hr>
+        <div class="chat-lista__chat-item">
+          <img src="pug.jpg" alt="Foto-de-la-pug" class="foto-chat">
+          <div class="info-chat">
+            <div class="chat-lista__nombre">la pug</div>
+            <div class="chat-lista__mensaje">Hace 3 horas</div>
+          </div>
+        </div>
+        <hr>
+        <div class="chat-lista__chat-item">
+          <img src="victor.jpg" alt="Foto-de-persona7" class="foto-chat">
+          <div class="info-chat">
+            <div class="chat-lista__nombre">victor</div>
+            <div class="chat-lista__mensaje">Hace 4 horas</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="llamadas" class="chat-lista">
+        <div class="chat-lista__chat-item">
+          <img src="giovanni.jpg" alt="Foto-de-giovanni" class="foto-chat">
+          <div class="info-chat">
+            <div class="chat-lista__nombre">Giovanni</div>
+            <div class="chat-lista__mensaje">Llamada perdida - Hoy 9:15 AM</div>
+          </div>
+        </div>
+        <hr>
+        <div class="chat-lista__chat-item">
+          <img src="victor.jpg" alt="Foto-de-victor" class="foto-chat">
+          <div class="info-chat">
+            <div class="chat-lista__nombre">victor</div>
+            <div class="chat-lista__mensaje">Llamada saliente - Ayer 7:45 PM</div>
+          </div>
+        </div>
+        <hr>
+        <div class="chat-lista__chat-item">
+          <img src="vaca.jpg" alt="Foto-de-Vaca" class="foto-chat">
+          <div class="info-chat">
+            <div class="chat-lista__nombre">Vaca</div>
+            <div class="chat-lista__mensaje">Llamada entrante - Hoy 10:30 AM</div>
+          </div>
+        </div>
+        <hr>
+        <div class="chat-lista__chat-item">
+          <img src="germu.jpg" alt="Foto-de-germu" class="foto-chat">
+          <div class="info-chat">
+            <div class="chat-lista__nombre">La germu del ñero</div>
+            <div class="chat-lista__mensaje">Llamada perdida - Hoy 11:00 AM</div>
+          </div>
+        </div>
+        <hr>
+        <div class="chat-lista__chat-item">
+          <img src="pug.jpg" alt="Foto-de-pug" class="foto-chat">
+          <div class="info-chat">
+            <div class="chat-lista__nombre">la pug</div>
+            <div class="chat-lista__mensaje">Llamada saliente - Ayer 6:00 PM</div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+</body>
+</html>
